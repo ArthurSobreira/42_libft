@@ -6,7 +6,7 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 19:05:43 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/24 19:30:34 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/24 19:52:44 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,18 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-int		ft_isalpha(int value);
-int		ft_isdigit(int value);
-int		ft_isalnum(int value);
-int		ft_isascii(int value);
-int		ft_isprint(int value);
-char	*ft_strdup(const char *str);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+char	*ft_strdup(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-size_t	ft_strlcat(char *dest, const char *src, size_t size);
-size_t	ft_strlcpy(char *dest, const char *src, size_t size);
-size_t	ft_strlen(const char *str);
-int		ft_atoi(const char *number);
-int		ft_toupper(int value);
-int		ft_tolower(int value);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dest_size);
+size_t	ft_strlen(const char *s);
+int		ft_atoi(const char *nptr);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 #endif
