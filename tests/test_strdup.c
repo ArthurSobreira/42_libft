@@ -1,16 +1,16 @@
 #include "includes/tests.h"
 
-void	test_strdup(const char *string)
+void	test_strdup(const char *input)
 {
 	// Arrange
 	const char	*act_result;
 	const char	*expec_result;
 
 	// Act
-	act_result = ft_strdup(string);
+	act_result = ft_strdup(input);
 
 	// Assert
-	expec_result = strdup(string);  // Call the original one
+	expec_result = strdup(input);  // Call the original one
 
 	if (strcmp(act_result, expec_result) == 0)
 	{
