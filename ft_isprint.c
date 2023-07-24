@@ -6,13 +6,13 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 11:41:23 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/19 11:52:09 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/24 20:01:07 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int value)
+int	ft_isprint(int c)
 {
-	if ((value >= 32) && (value <= 126))
+	if ((c >= 32) && (c <= 126))
 	{
 		return (1);
 	}
