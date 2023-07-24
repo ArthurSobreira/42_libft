@@ -6,13 +6,13 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 19:17:43 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/19 11:19:42 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/24 20:01:04 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int value)
+int	ft_isdigit(int c)
 {
-	if ((value >= '0') && (value <= '9'))
+	if ((c >= '0') && (c <= '9'))
 	{
 		return (1);
 	}

@@ -6,15 +6,15 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 15:14:16 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/21 14:54:16 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/24 19:57:59 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int value)
+int	ft_toupper(int c)
 {
-	if ((value >= 'a') && (value <= 'z'))
+	if ((c >= 'a') && (c <= 'z'))
 	{
-		value = value - 32;
+		c = c - 32;
 	}
-	return (value);
+	return (c);
 }

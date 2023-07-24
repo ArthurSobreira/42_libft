@@ -6,13 +6,13 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 11:37:30 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/19 11:52:34 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/24 20:00:45 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int value)
+int	ft_isascii(int c)
 {
-	if ((value >= 0) && (value <= 127))
+	if ((c >= 0) && (c <= 127))
 	{
 		return (1);
 	}
