@@ -1,16 +1,16 @@
 #include "includes/tests.h"
 
-void	test_atoi(const char *number)
+void	test_atoi(const char *nptr)
 {
 	// Arrange
 	size_t	act_result;
 	size_t	expec_result;
 
 	// Act
-	act_result = ft_atoi(number);
+	act_result = ft_atoi(nptr);
 	
 	// Assert
-	expec_result = atoi(number);  // Call the original one
+	expec_result = atoi(nptr);  // Call the original one
 
 	if (expec_result == act_result)
 	{
