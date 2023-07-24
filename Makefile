@@ -14,6 +14,7 @@ YELLOW = "\033[33m"
 COLOR_LIMITER = "\033[0m"
 
 SOURCES = \
+	ft_atoi.c \
 	ft_isalnum.c \
 	ft_isalpha.c \
 	ft_isascii.c \
