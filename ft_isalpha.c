@@ -6,17 +6,17 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 19:20:41 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/21 14:23:36 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/24 20:00:57 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int value)
+int	ft_isalpha(int c)
 {
-	if ((value >= 'A') && (value <= 'Z'))
+	if ((c >= 'A') && (c <= 'Z'))
 	{
 		return (1);
 	}
-	else if ((value >= 'a') && (value <= 'z'))
+	else if ((c >= 'a') && (c <= 'z'))
 	{
 		return (1);
 	}
