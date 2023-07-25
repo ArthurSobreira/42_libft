@@ -20,8 +20,6 @@ void	test_strdup(const char *input)
 	{
 		printf("\033[31m[Failure]\033[0m Expected: '%s'  Result: '%s'\n", expec_result, act_result);
 	}
-	free(expec_result);
-	free(act_result);
 }
 
 int	main(void)
