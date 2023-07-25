@@ -22,6 +22,7 @@ SOURCES = \
 	ft_isascii.c \
 	ft_isdigit.c \
 	ft_isprint.c \
+	ft_strchr.c \
 	ft_strdup.c \
 	ft_strlcat.c \
 	ft_strlcpy.c \
