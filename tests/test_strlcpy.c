@@ -12,8 +12,7 @@ void	test_strlcpy(char *dest, const char *src, size_t size)
 	act_result = ft_strlcpy(dest, src, size);
 
 	// Assert
-	strncpy(dest_copy, src, size); // Call strcpy
-	expec_result = strlen(src);
+	expec_result = strlcpy(dest_copy, src, size); // Call strcpy;
 
 	if ((strcmp(dest_copy, dest) == 0) && (act_result == expec_result))
 	{
