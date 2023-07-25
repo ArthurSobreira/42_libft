@@ -12,8 +12,7 @@ void	test_strlcat(char *dest, const char *src, size_t size)
 	act_result = ft_strlcat(dest, src, size);
 
 	// Assert
-	strncat(dest_copy, src, size); // Call strncat
-	expec_result = strlen(dest_copy);
+	expec_result = strlcat(dest_copy, src, size); // Call strncat;
 
 	if ((strcmp(dest_copy, dest) == 0) && (act_result == expec_result))
 	{
