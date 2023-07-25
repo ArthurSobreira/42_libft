@@ -16,6 +16,7 @@ COLOR_LIMITER = "\033[0m"
 SOURCES = \
 	ft_atoi.c \
 	ft_bzero.c \
+	ft_calloc.c \
 	ft_isalnum.c \
 	ft_isalpha.c \
 	ft_isascii.c \
@@ -57,7 +58,7 @@ re: fclean all
 
 .PHONY: all clean fclean re
 
-# Run tests
+# Run Tests
 TESTS = $(patsubst ft_%.c,%,$(SOURCES))
 
 $(TESTS): %: $(NAME)
