@@ -48,7 +48,7 @@ int	main(void)
 	char *test3_src = "world";
 	int test3_size = 11;
 
-	// Test 5
+	// Test 05
     char test5_dest[5] = "Hi";
     char *test5_src = "";
     size_t test5_size = 5;
