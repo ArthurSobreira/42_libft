@@ -33,22 +33,22 @@ int	main(void)
 	char *test1_src = "1234";
 	int test1_size = 6;
 
-	// Test 2
+	// Test 02
     char test2_dest[5] = "123";
     char *test2_src = "456";
     size_t test2_size = 5;
 
-    // Test 3
+    // Test 03
     char test3_dest[10] = "Short";
     char *test3_src = "String";
     size_t test3_size = 0;
 
-    // Test 4
+    // Test 04
     char test4_dest[10] = "Hello";
     char *test4_src = "World";
     size_t test4_size = 8;
 
-    // Test 5
+    // Test 05
     char test5_dest[10] = "Hi";
     char *test5_src = "";
     size_t test5_size = 5;
