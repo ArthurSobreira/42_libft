@@ -6,7 +6,7 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/25 15:58:56 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/25 18:14:51 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/25 18:46:58 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strchr(const char *s, int c)
 		if (s[index] == (unsigned char) c)
 		{
 			first_occ = (char *)&s[index];
-				return (first_occ);
+			return (first_occ);
 		}
 		index++;
 	}
