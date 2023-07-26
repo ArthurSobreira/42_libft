@@ -21,8 +21,9 @@ SOURCES = \
 	ft_isalpha.c \
 	ft_isascii.c \
 	ft_isdigit.c \
-	ft_memcmp.c \
 	ft_isprint.c \
+	ft_memcmp.c \
+	ft_memset.c \
 	ft_strchr.c \
 	ft_strdup.c \
 	ft_strlcat.c \
