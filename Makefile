@@ -68,9 +68,9 @@ re: fclean all
 # Run Tests
 TESTS = $(patsubst ft_%.c,%,$(SOURCES))
 
-$(TESTS): %: $(NAME)
-	@echo $(YELLOW)[ ===== Testing ft_$* ===== ]$(COLOR_LIMITER)
-	@$(CC) $(CFLAGS) -lbsd $(TESTS_PATH)test_$*.c $(NAME) -o libft_test && ./libft_test
+$(TESTS): all
+	@echo $(YELLOW)[ ===== Testing ft_$@ ===== ]$(COLOR_LIMITER)
+	@$(CC) $(CFLAGS) -lbsd $(TESTS_PATH)test_$@.c $(NAME) -o libft_test && ./libft_test
 
 run_tests: $(TESTS)
 	@echo $(YELLOW)[ ======== End of Tests ======== ]$(COLOR_LIMITER)
