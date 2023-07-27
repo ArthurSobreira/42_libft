@@ -24,6 +24,7 @@ SOURCES = \
 	ft_isprint.c \
 	ft_memchr.c \
 	ft_memcmp.c \
+	ft_memmove.c \
 	ft_memset.c \
 	ft_strchr.c \
 	ft_strdup.c \
@@ -69,9 +70,7 @@ TESTS = $(patsubst ft_%.c,%,$(SOURCES))
 
 $(TESTS): %: $(NAME)
 	@echo $(YELLOW)[ ===== Testing ft_$* ===== ]$(COLOR_LIMITER)
-	@if [ "$*" != "calloc" ]; then \
-		$(CC) $(CFLAGS) -lbsd $(TESTS_PATH)test_$*.c $(NAME) -o libft_test && ./libft_test; \
-	fi
+	@$(CC) $(CFLAGS) -lbsd $(TESTS_PATH)test_$*.c $(NAME) -o libft_test && ./libft_test
 
 run_tests: $(TESTS)
 	@echo $(YELLOW)[ ======== End of Tests ======== ]$(COLOR_LIMITER)
