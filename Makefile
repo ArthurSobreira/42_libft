@@ -53,13 +53,13 @@ $(BIN_PATH):
 	@mkdir -p $(BIN_PATH)
 
 clean:
-	@rm -rf $(BIN_PATH)
 	@echo $(RED)[Removing Objects...]$(COLOR_LIMITER)
+	@rm -rf $(BIN_PATH)
 
 fclean: clean
+	@echo $(RED)[Removing $(NAME)...]$(COLOR_LIMITER)
 	@rm -f $(NAME)
 	@rm -f libft_test
-	@echo $(RED)[Removing $(NAME)...]$(COLOR_LIMITER)
 
 re: fclean all
 
