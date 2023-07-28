@@ -6,5 +6,6 @@
 #include <ctype.h>
 #include <string.h>
 #include <bsd/string.h>
+#include <fcntl.h>
 
 #endif
