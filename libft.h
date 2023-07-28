@@ -6,7 +6,7 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 19:05:43 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/28 11:57:44 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/28 13:34:21 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,6 @@ int		ft_toupper(int c);
 
 // Part 2 - Additional functions
 
-
+void	ft_putchar_fd(char c, int fd);
 
 #endif
