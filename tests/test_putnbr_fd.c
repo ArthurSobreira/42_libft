@@ -43,8 +43,8 @@ int	main(void)
     // Function Call
     test_putnbr_fd(1);
     test_putnbr_fd(9);
-	test_putnbr_fd(1234);
-	test_putnbr_fd(2147483647);
-	test_putnbr_fd(-2147483648);
-	return (0);
+    test_putnbr_fd(1234);
+    test_putnbr_fd(2147483647);
+    test_putnbr_fd(-2147483648);
+    return (0);
 }
