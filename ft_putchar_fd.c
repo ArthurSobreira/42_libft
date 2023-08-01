@@ -3,16 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 13:32:55 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/28 14:22:58 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/07/31 21:20:17 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Change this header !!
 
 #include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
-{	
+{
 	write(fd, &c, 1);
 }
