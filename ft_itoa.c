@@ -33,13 +33,13 @@ static size_t	digits_counter(int number)
 
 char	*ft_itoa(int n)
 {
-	int		len_number;
 	char	*result;
+	int		len_number;
 	long	number;
 
 	len_number = digits_counter(n);
 	number = n;
-	result = malloc((len_number + 1) * sizeof(char));
+	result = (char *)malloc((len_number + 1) * sizeof(char));
 	if (result == NULL)
 		return (NULL);
 	if (number == 0)
@@ -49,12 +49,13 @@ char	*ft_itoa(int n)
 		result[0] = '-';
 		number *= -1;
 	}
-	result[len_number--] = '\0';
+	result[len_number] = '\0';
+	len_number--;
 	while (number)
 	{
 		result[len_number] = (number % 10) + '0';
-		len_number--;
 		number = number / 10;
+		len_number--;
 	}
 	return (result);
 }
