@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/31 15:49:29 by marvin            #+#    #+#             */
-/*   Updated: 2023/07/31 15:49:29 by marvin           ###   ########.fr       */
+/*   Created: 2023/08/02 09:24:31 by arsobrei          #+#    #+#             */
+/*   Updated: 2023/08/02 09:24:31 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// Change this header !!
 
 #include "libft.h"
 
