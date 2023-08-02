@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 # Path Definition
 HEADER_PATH = ./
-BIN_PATH = ./bin/
+BIN_PATH = ./
 TESTS_PATH = ./tests/
 
 # Colors Definition 
@@ -43,6 +43,7 @@ SOURCES = \
 	ft_strncmp.c \
 	ft_strnstr.c \
 	ft_strrchr.c \
+	ft_strtrim.c \
 	ft_substr.c \
 	ft_tolower.c \
 	ft_toupper.c \
@@ -64,7 +65,7 @@ $(BIN_PATH):
 
 clean:
 	@echo $(RED)[Removing Objects...]$(COLOR_LIMITER)
-	@rm -rf $(BIN_PATH)
+	@rm -f *.o
 
 fclean: clean
 	@echo $(RED)[Removing $(NAME)...]$(COLOR_LIMITER)
