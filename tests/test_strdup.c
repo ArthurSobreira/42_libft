@@ -3,8 +3,8 @@
 void	test_strdup(const char *input)
 {
 	// Arrange
-	const char	*act_result;
-	const char	*expec_result;
+	char	*act_result;
+	char	*expec_result;
 
 	// Act
 	act_result = ft_strdup(input);
@@ -20,8 +20,8 @@ void	test_strdup(const char *input)
 	{
 		printf("\033[31m[Failure]\033[0m Expected: '%s'  Result: '%s'\n", expec_result, act_result);
 	}
-	free((char *)act_result);
-    free((void *)expec_result);
+	free(act_result);
+    free(expec_result);
 }
 
 int	main(void)
