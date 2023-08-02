@@ -9,7 +9,6 @@ void	test_strjoin(char const *s1, char const *s2, char *expec_result)
 	act_result = ft_strjoin(s1, s2);
 
 	// Assert
-
 	if (strcmp(act_result, expec_result) == 0)
 	{
 		printf("\033[32m[Success]\033[0m Expected: '%s'  Result: '%s'\n", expec_result, act_result);
