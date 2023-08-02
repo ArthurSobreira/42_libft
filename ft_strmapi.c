@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/01 10:30:51 by marvin            #+#    #+#             */
-/*   Updated: 2023/08/01 10:30:51 by marvin           ###   ########.fr       */
+/*   Created: 2023/08/02 09:27:03 by arsobrei          #+#    #+#             */
+/*   Updated: 2023/08/02 09:27:03 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Change this header !!
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	(void)s;
-	(void)f;
+	(void) s;
+	(void) f;
 	return (0);
 }
