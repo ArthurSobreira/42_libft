@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 13:32:55 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/31 21:20:17 by marvin           ###   ########.fr       */
+/*   Updated: 2023/08/02 09:25:43 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// Change this header !!
 
 #include "libft.h"
 
