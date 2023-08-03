@@ -51,6 +51,7 @@ SOURCES = \
 BONUS_SOURCES = \
 	ft_lstadd_front.c \
 	ft_lstnew.c \
+	ft_lstsize.c \
 
 OBJECTS = $(addprefix $(BIN_PATH), $(SOURCES:%.c=%.o))
 BONUS_OBJECTS = $(addprefix $(BIN_PATH), $(BONUS_SOURCES:%.c=%.o))
