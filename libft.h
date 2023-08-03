@@ -6,7 +6,7 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 19:05:43 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/08/02 17:41:25 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/08/03 11:52:32 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,13 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-// Part 1 - Libc functions
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
+
+// Part 1 - Libc Functions
 
 int		ft_atoi(const char *nptr);
 void	ft_bzero(void *s, size_t n);
@@ -42,7 +48,7 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
-// Part 2 - Additional functions
+// Part 2 - Additional Functions
 
 char	*ft_itoa(int n);
 void	ft_putchar_fd(char c, int fd);
@@ -54,5 +60,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s1, char const *set);
+
+// Bonus Functions
+
+t_list	*ft_lstnew(void *content);
 
 #endif
