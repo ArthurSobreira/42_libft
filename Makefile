@@ -48,7 +48,11 @@ SOURCES = \
 	ft_tolower.c \
 	ft_toupper.c \
 
+BONUS_SOURCES = \
+	ft_lstnew.c \
+
 OBJECTS = $(addprefix $(BIN_PATH), $(SOURCES:%.c=%.o))
+BONUS_OBJECTS = $(addprefix $(BIN_PATH), $(BONUS_SOURCES:%.c=%.o))
 
 all: $(BIN_PATH) $(NAME)
 
@@ -63,6 +67,9 @@ $(NAME): $(OBJECTS)
 $(BIN_PATH):
 	@mkdir -p $(BIN_PATH)
 
+bonus:
+	@make OBJECTS="$(BONUS_OBJECTS)" --no-print-directory
+
 clean:
 	@echo $(RED)[Removing Objects...]$(COLOR_LIMITER)
 	@rm -rf $(BIN_PATH)
@@ -74,7 +81,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
 
 # Run Tests
 TESTS = $(patsubst ft_%.c,%,$(SOURCES))
