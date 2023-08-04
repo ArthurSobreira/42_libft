@@ -6,9 +6,11 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 11:41:23 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/24 20:01:07 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/08/04 15:09:38 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
