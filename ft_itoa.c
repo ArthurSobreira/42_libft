@@ -35,7 +35,7 @@ char	*ft_itoa(int n)
 	int		len_number;
 	long	number;
 
-	len_number = digits_counter(n);
+	len_number = ft_digits_counter(n);
 	number = n;
 	result = (char *)malloc((len_number + 1) * sizeof(char));
 	if (result == NULL)
