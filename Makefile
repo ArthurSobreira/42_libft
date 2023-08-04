@@ -4,7 +4,6 @@ CFLAGS = -Wall -Wextra -Werror
 # Path Definition
 HEADER_PATH = ./
 BIN_PATH = ./bin/
-TESTS_PATH = ./tests/
 
 # Colors Definition 
 GREEN = "\033[32m"
@@ -94,6 +93,7 @@ re: fclean all
 
 # Run Tests
 TESTS = $(patsubst ft_%.c,%,$(SOURCES))
+TESTS_PATH = ./tests/
 
 $(TESTS): all
 	@echo $(YELLOW)[ ===== Testing ft_$@ ===== ]$(COLOR_LIMITER)
