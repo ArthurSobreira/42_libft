@@ -6,9 +6,11 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 19:17:43 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/24 20:01:04 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/08/04 15:09:25 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
