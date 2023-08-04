@@ -14,13 +14,6 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	size_t	index;
-
-	index = 0;
-	while (s[index] != '\0')
-	{
-		ft_putchar_fd(s[index], fd);
-		index++;
-	}
+	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }
