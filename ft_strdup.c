@@ -6,12 +6,11 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 13:07:26 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/07/24 20:01:18 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/08/04 15:13:44 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strdup(const char *s)
 {
