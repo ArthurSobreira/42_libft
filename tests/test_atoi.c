@@ -1,16 +1,16 @@
 #include "includes/tests.h"
 
-void	test_atoi(const char *input)
+void test_atoi(const char *input)
 {
 	// Arrange
-	size_t	act_result;
-	size_t	expec_result;
+	size_t act_result;
+	size_t expec_result;
 
 	// Act
 	act_result = ft_atoi(input);
-	
+
 	// Assert
-	expec_result = atoi(input);  // Call the original one
+	expec_result = atoi(input); // Call the original one
 
 	if (expec_result == act_result)
 	{
@@ -22,13 +22,13 @@ void	test_atoi(const char *input)
 	}
 }
 
-int	main(void)
+int main(void)
 {
-	char	*input1 = "123";
-	char	*input2 = "-123";
-	char	*input3 = "  123";
-	char	*input4 = "+1234";
-	char	*input5 = "+-123";
+	char *input1 = "123";
+	char *input2 = "-123";
+	char *input3 = "  123";
+	char *input4 = "+1234";
+	char *input5 = "+-123";
 
 	// Function Call
 	test_atoi(input1);
@@ -36,5 +36,5 @@ int	main(void)
 	test_atoi(input3);
 	test_atoi(input4);
 	test_atoi(input5);
-	return(0);
+	return (0);
 }
