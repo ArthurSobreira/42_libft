@@ -1,6 +1,6 @@
 #include "includes/tests.h"
 
-void	test_strlcat(char *dest, const char *src, size_t size)
+void test_strlcat(char *dest, const char *src, size_t size)
 {
 	// Arrange
 	size_t act_result;
@@ -17,16 +17,16 @@ void	test_strlcat(char *dest, const char *src, size_t size)
 	if ((strcmp(dest_copy, dest) == 0) && (act_result == expec_result))
 	{
 		printf("\033[32m[Success]\033[0m Expected: %ld  Result: %ld\n",
-				expec_result, act_result);
+			   expec_result, act_result);
 	}
 	else
 	{
 		printf("\033[31m[Failure]\033[0m Expected: %ld  Result: %ld\n",
-				expec_result, act_result);
+			   expec_result, act_result);
 	}
 }
 
-int	main(void)
+int main(void)
 {
 	// Test 01
 	char test1_dest[10] = "t";
@@ -49,9 +49,9 @@ int	main(void)
 	int test3_size = 11;
 
 	// Test 05
-    char test5_dest[5] = "Hi";
-    char *test5_src = "";
-    size_t test5_size = 5;
+	char test5_dest[5] = "Hi";
+	char *test5_src = "";
+	size_t test5_size = 5;
 
 	// Function Call
 	test_strlcat(test1_dest, test1_src, test1_size);

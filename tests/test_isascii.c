@@ -1,14 +1,14 @@
 #include "includes/tests.h"
 
-void	test_isascii(int input)
+void test_isascii(int input)
 {
 	// Arrange
-	int	act_result;
+	int act_result;
 	int expec_result;
 
 	// Act
 	act_result = ft_isascii(input);
-	
+
 	// Assert
 	expec_result = isascii(input);
 
@@ -28,13 +28,13 @@ void	test_isascii(int input)
 	}
 }
 
-int	main(void)
+int main(void)
 {
-	int	input1 = 'A';
+	int input1 = 'A';
 	int input2 = 'z';
 	int input3 = '9';
-	int	input4 = '~';
-	int	input5 = ' ';
+	int input4 = '~';
+	int input5 = ' ';
 	int input6 = '\t';
 
 	// Function Call
@@ -44,5 +44,5 @@ int	main(void)
 	test_isascii(input4);
 	test_isascii(input5);
 	test_isascii(input6);
-	return(0);
+	return (0);
 }

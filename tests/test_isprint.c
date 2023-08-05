@@ -1,16 +1,16 @@
 #include "includes/tests.h"
 
-void	test_isprint(int input)
+void test_isprint(int input)
 {
 	// Arrange
-	int	act_result;
+	int act_result;
 	int expec_result;
 
 	// Act
 	act_result = ft_isprint(input);
-	
+
 	// Assert
-	expec_result = isprint(input);  // Call the original one
+	expec_result = isprint(input); // Call the original one
 
 	if (expec_result > 0)
 	{
@@ -28,14 +28,13 @@ void	test_isprint(int input)
 	}
 }
 
-
-int	main(void)
+int main(void)
 {
-	int	input1 = 'A';
+	int input1 = 'A';
 	int input2 = 'z';
 	int input3 = '9';
-	int	input4 = '~';
-	int	input5 = ' ';
+	int input4 = '~';
+	int input5 = ' ';
 	int input6 = '\t';
 
 	// Function Call
@@ -45,5 +44,5 @@ int	main(void)
 	test_isprint(input4);
 	test_isprint(input5);
 	test_isprint(input6);
-	return(0);
+	return (0);
 }

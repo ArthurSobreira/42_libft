@@ -1,14 +1,14 @@
 #include "includes/tests.h"
 
-void	test_isdigit(int input)
+void test_isdigit(int input)
 {
 	// Arrange
-	int	act_result;
+	int act_result;
 	int expec_result;
 
 	// Act
 	act_result = ft_isdigit(input);
-	
+
 	// Assert
 	expec_result = isdigit(input);
 
@@ -28,13 +28,13 @@ void	test_isdigit(int input)
 	}
 }
 
-int	main(void)
+int main(void)
 {
-	int	input1 = '1';
+	int input1 = '1';
 	int input2 = '5';
 	int input3 = '9';
-	int	input4 = 'z';
-	int	input5 = 'A';
+	int input4 = 'z';
+	int input5 = 'A';
 	int input6 = '\t';
 
 	// Function Call
@@ -44,5 +44,5 @@ int	main(void)
 	test_isdigit(input4);
 	test_isdigit(input5);
 	test_isdigit(input6);
-	return(0);
+	return (0);
 }

@@ -1,16 +1,16 @@
 #include "includes/tests.h"
 
-void	test_memchr(const void *input, int c, size_t n)
+void test_memchr(const void *input, int c, size_t n)
 {
 	// Arrange
-	const char	*act_result;
-	const char	*expec_result;
+	const char *act_result;
+	const char *expec_result;
 
 	// Act
 	act_result = ft_memchr(input, c, n);
 
 	// Assert
-	expec_result = memchr(input, c, n);  // Call the original one
+	expec_result = memchr(input, c, n); // Call the original one
 
 	if (expec_result == NULL)
 	{
@@ -33,32 +33,32 @@ void	test_memchr(const void *input, int c, size_t n)
 	}
 }
 
-int	main(void)
+int main(void)
 {
 	// Test 01
-	const char	*test1_str = "test1234";
-	int			test1_c = 's';
-	int			test1_n = 3;
+	const char *test1_str = "test1234";
+	int test1_c = 's';
+	int test1_n = 3;
 
 	// Test 02
-	const char	*test2_str = "test1234";
-	int			test2_c = 's';
-	int			test2_n = 2;
+	const char *test2_str = "test1234";
+	int test2_c = 's';
+	int test2_n = 2;
 
 	// Test 03
-	const char	*test3_str = "Hello, World!";
-	int			test3_c = ' ';
-	int			test3_n = strlen(test3_str);
+	const char *test3_str = "Hello, World!";
+	int test3_c = ' ';
+	int test3_n = strlen(test3_str);
 
 	// Test 04
-	const char	*test4_str = "Hello, World!";
-	int			test4_c = 'Z';
-	int			test4_n = strlen(test4_str);
+	const char *test4_str = "Hello, World!";
+	int test4_c = 'Z';
+	int test4_n = strlen(test4_str);
 
 	// Test 05
-	const char	*test5_str = "abcdefghi";
-	int			test5_c = 'd';
-	int			test5_n = 6;
+	const char *test5_str = "abcdefghi";
+	int test5_c = 'd';
+	int test5_n = 6;
 
 	// Function Call
 	test_memchr(test1_str, test1_c, test1_n);
@@ -66,5 +66,5 @@ int	main(void)
 	test_memchr(test3_str, test3_c, test3_n);
 	test_memchr(test4_str, test4_c, test4_n);
 	test_memchr(test5_str, test5_c, test5_n);
-	return(0);
+	return (0);
 }

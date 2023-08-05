@@ -1,16 +1,16 @@
 #include "includes/tests.h"
 
-void	test_strchr(const char *input, int c)
+void test_strchr(const char *input, int c)
 {
 	// Arrange
-	const char	*act_result;
-	const char	*expec_result;
+	const char *act_result;
+	const char *expec_result;
 
 	// Act
 	act_result = ft_strchr(input, c);
 
 	// Assert
-	expec_result = strchr(input, c);  // Call the original one
+	expec_result = strchr(input, c); // Call the original one
 
 	if (expec_result == NULL)
 	{
@@ -33,27 +33,27 @@ void	test_strchr(const char *input, int c)
 	}
 }
 
-int	main(void)
+int main(void)
 {
 	// Test 01
-	const char	*test1_str = "test1234";
-	int			test1_c = 't';
+	const char *test1_str = "test1234";
+	int test1_c = 't';
 
 	// Test 02
-	const char	*test2_str = "test1234";
-	int			test2_c = '1';
+	const char *test2_str = "test1234";
+	int test2_c = '1';
 
 	// Test 03
-	const char	*test3_str = "Hello, World!";
-	int			test3_c = ' ';
+	const char *test3_str = "Hello, World!";
+	int test3_c = ' ';
 
 	// Test 04
-	const char	*test4_str = "Hello, World!";
-	int			test4_c = '\0';
+	const char *test4_str = "Hello, World!";
+	int test4_c = '\0';
 
 	// Test 05
-	const char	*test5_str = "abcdefghi";
-	int			test5_c = 'j';
+	const char *test5_str = "abcdefghi";
+	int test5_c = 'j';
 
 	// Function Call
 	test_strchr(test1_str, test1_c);
@@ -61,5 +61,5 @@ int	main(void)
 	test_strchr(test3_str, test3_c);
 	test_strchr(test4_str, test4_c);
 	test_strchr(test5_str, test5_c);
-	return(0);
+	return (0);
 }

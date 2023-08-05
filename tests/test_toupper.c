@@ -1,16 +1,16 @@
 #include "includes/tests.h"
 
-void	test_toupper(int input)
+void test_toupper(int input)
 {
 	// Arrange
-	int	act_result;
-	int	expec_result;
+	int act_result;
+	int expec_result;
 
 	// Act
 	act_result = ft_toupper(input);
-	
+
 	// Assert
-	expec_result = toupper(input);  // Call the original one
+	expec_result = toupper(input); // Call the original one
 
 	if (expec_result == act_result)
 	{
@@ -22,13 +22,13 @@ void	test_toupper(int input)
 	}
 }
 
-int	main(void)
+int main(void)
 {
-	int	input1 = 'A';
-	int	input2 = 'a';
-	int	input3 = 'Z';
-	int	input4 = 'z';
-	int	input5 = '4';
+	int input1 = 'A';
+	int input2 = 'a';
+	int input3 = 'Z';
+	int input4 = 'z';
+	int input5 = '4';
 
 	// Function Call
 	test_toupper(input1);
@@ -36,5 +36,5 @@ int	main(void)
 	test_toupper(input3);
 	test_toupper(input4);
 	test_toupper(input5);
-	return(0);
+	return (0);
 }

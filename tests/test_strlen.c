@@ -1,16 +1,16 @@
 #include "includes/tests.h"
 
-void	test_strlen(const char *input)
+void test_strlen(const char *input)
 {
 	// Arrange
-	size_t	act_result;
-	size_t	expec_result;
+	size_t act_result;
+	size_t expec_result;
 
 	// Act
 	act_result = ft_strlen(input);
-	
+
 	// Assert
-	expec_result = strlen(input);  // Call the original one
+	expec_result = strlen(input); // Call the original one
 
 	if (expec_result == act_result)
 	{
@@ -22,13 +22,13 @@ void	test_strlen(const char *input)
 	}
 }
 
-int	main(void)
+int main(void)
 {
-	char	*input1 = "te";
-	char	*input2 = "tes";
-	char	*input3 = "teste";
-	char	*input4 = "teste123";
-	char	*input5 = "";
+	char *input1 = "te";
+	char *input2 = "tes";
+	char *input3 = "teste";
+	char *input4 = "teste123";
+	char *input5 = "";
 
 	// Function Call
 	test_strlen(input1);
@@ -36,5 +36,5 @@ int	main(void)
 	test_strlen(input3);
 	test_strlen(input4);
 	test_strlen(input5);
-	return(0);
+	return (0);
 }

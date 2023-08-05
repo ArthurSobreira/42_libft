@@ -1,14 +1,14 @@
 #include "includes/tests.h"
 
-void	test_isalpha(int input)
+void test_isalpha(int input)
 {
 	// Arrange
-	int	act_result;
+	int act_result;
 	int expec_result;
 
 	// Act
 	act_result = ft_isalpha(input);
-	
+
 	// Assert
 	expec_result = isalpha(input);
 
@@ -28,13 +28,13 @@ void	test_isalpha(int input)
 	}
 }
 
-int	main(void)
+int main(void)
 {
-	int	input1 = 'A';
+	int input1 = 'A';
 	int input2 = 'Z';
 	int input3 = 'a';
-	int	input4 = 'z';
-	int	input5 = '0';
+	int input4 = 'z';
+	int input5 = '0';
 	int input6 = '\t';
 
 	// Function Call
@@ -44,5 +44,5 @@ int	main(void)
 	test_isalpha(input4);
 	test_isalpha(input5);
 	test_isalpha(input6);
-	return(0);
+	return (0);
 }

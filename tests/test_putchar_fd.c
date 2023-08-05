@@ -1,15 +1,15 @@
 #include "includes/tests.h"
 
-int	test_putchar_fd(char c)
+int test_putchar_fd(char c)
 {
-	// Arrange
-    char	buff;
-    int		file_desc;
-    int		byte_nb;
+    // Arrange
+    char buff;
+    int file_desc;
+    int byte_nb;
 
     // Act
     file_desc = open("test.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
-    ft_putchar_fd(c, file_desc);  // Writing on the file
+    ft_putchar_fd(c, file_desc); // Writing on the file
 
     // Close the file after writing
     close(file_desc);
@@ -38,13 +38,13 @@ int	test_putchar_fd(char c)
     return (0);
 }
 
-int	main(void)
-{	
-	// Function Call
-	test_putchar_fd('A');
-	test_putchar_fd('Z');
-	test_putchar_fd('1');
-	test_putchar_fd('9');
-	test_putchar_fd('+');
-	return (0);
+int main(void)
+{
+    // Function Call
+    test_putchar_fd('A');
+    test_putchar_fd('Z');
+    test_putchar_fd('1');
+    test_putchar_fd('9');
+    test_putchar_fd('+');
+    return (0);
 }

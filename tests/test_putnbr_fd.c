@@ -1,15 +1,15 @@
 #include "includes/tests.h"
 
-int	test_putnbr_fd(int c)
+int test_putnbr_fd(int c)
 {
-	// Arrange
-    char	buff[4096];
-    int		file_desc;
-    int		byte_nb;
+    // Arrange
+    char buff[4096];
+    int file_desc;
+    int byte_nb;
 
     // Act
     file_desc = open("test.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
-    ft_putnbr_fd(c, file_desc);  // Writing on the file
+    ft_putnbr_fd(c, file_desc); // Writing on the file
 
     // Close the file after writing
     close(file_desc);
@@ -38,8 +38,8 @@ int	test_putnbr_fd(int c)
     return (0);
 }
 
-int	main(void)
-{	
+int main(void)
+{
     // Function Call
     test_putnbr_fd(1);
     test_putnbr_fd(9);
