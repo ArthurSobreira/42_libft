@@ -1,18 +1,18 @@
 #include "includes/tests.h"
 
-void	test_bzero(void *input, size_t n)
+void test_bzero(void *input, size_t n)
 {
 	// Arrange
-	size_t			index;
-	unsigned char 	*ptr;
-	int				all_z;
+	size_t index;
+	unsigned char *ptr;
+	int all_z;
 
 	// Act
 	ft_bzero(input, n);
 	index = 0;
 	all_z = 1;
 	ptr = (unsigned char *)input;
-	
+
 	// Assert
 	while (index < n)
 	{
@@ -33,27 +33,27 @@ void	test_bzero(void *input, size_t n)
 	}
 }
 
-int	main(void)
+int main(void)
 {
 	// Test 01
-	char	test1_input[] = "Hello, World!";
-	size_t	test1_n = 5;
+	char test1_input[] = "Hello, World!";
+	size_t test1_n = 5;
 
 	// Test 02
-    int test2_input[] = {1, 2, 3, 4};
-    size_t test2_n = sizeof(test2_input);
+	int test2_input[] = {1, 2, 3, 4};
+	size_t test2_n = sizeof(test2_input);
 
 	// Test 03
-    int test3_input[] = {1, 2, 3, 4, 5};
-    size_t test3_n = 12;
+	int test3_input[] = {1, 2, 3, 4, 5};
+	size_t test3_n = 12;
 
 	// Test 04
-	char	test4_input[] = "abcdef";
-	size_t	test4_n = 1;
+	char test4_input[] = "abcdef";
+	size_t test4_n = 1;
 
 	// Test 05
-    int test5_input[] = {};
-    size_t test5_n = 0;
+	int test5_input[] = {};
+	size_t test5_n = 0;
 
 	// Function Call
 	test_bzero(test1_input, test1_n);
@@ -61,5 +61,5 @@ int	main(void)
 	test_bzero(test3_input, test3_n);
 	test_bzero(test4_input, test4_n);
 	test_bzero(test5_input, test5_n);
-	return(0);
+	return (0);
 }
