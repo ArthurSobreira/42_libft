@@ -32,7 +32,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	index = 0;
 	while (index < len)
-	{	
+	{
 		sub_str[index] = s[start];
 		index++;
 		start++;
