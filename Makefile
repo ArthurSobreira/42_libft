@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 # Path Definition
 HEADER_PATH = ./
-BIN_PATH = ./
+BIN_PATH = ./bin/
 
 # Colors Definition 
 GREEN = "\033[32m"
