@@ -2,8 +2,10 @@ NAME = libft.a
 CFLAGS = -Wall -Wextra -Werror
 
 # Path Definition
-HEADER_PATH = ./
+SOURCES_PATH = ./src/
+HEADER_PATH = ./include/
 BIN_PATH = ./bin/
+TESTS_PATH = ./tests/
 
 # Colors Definition 
 GREEN = "\033[32m"
@@ -64,7 +66,7 @@ BONUS_OBJECTS = $(addprefix $(BIN_PATH), $(BONUS_SOURCES:%.c=%.o))
 
 all: $(BIN_PATH) $(NAME)
 
-$(BIN_PATH)%.o: %.c
+$(BIN_PATH)%.o: $(SOURCES_PATH)%.c
 	@echo $(GREEN)[Compiling]$(COLOR_LIMITER) $(YELLOW)$(<)...$(COLOR_LIMITER)
 	$(CC) $(CFLAGS) -c $< -o $@ -I $(HEADER_PATH)
 
@@ -93,11 +95,7 @@ re: fclean all
 
 # Run Tests
 TESTS = $(patsubst ft_%.c,%,$(SOURCES))
-TESTS_PATH = ./tests/
 
 $(TESTS): all
 	@echo $(YELLOW)[ ===== Testing ft_$@ ===== ]$(COLOR_LIMITER)
 	@$(CC) $(CFLAGS) -lbsd $(TESTS_PATH)test_$@.c $(NAME) -o libft_test && ./libft_test
-
-run_tests: $(TESTS)
-	@echo $(YELLOW)[ ======== End of Tests ======== ]$(COLOR_LIMITER)
