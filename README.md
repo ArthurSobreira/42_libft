@@ -7,7 +7,7 @@
 </div>
 
 ## Summary
-> <i>The first project on the 42sp fundamentals track, Libft, is about</i>
+> <i>The first project on the 42sp fundamentals track, <strong>Libft</strong>, is about</i>
 > <i>learning how standard C Programming functions actually work, recreating them,</i>
 > <i> and recreating how they work. The functions present in this library are listed below.</i>
 
