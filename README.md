@@ -20,10 +20,14 @@
 * [`ft_memset`](src/ft_memset.c) [`ft_strchr`](src/ft_strchr.c) [`ft_strdup`](src/ft_strdup.c) [`ft_strlcat`](src/ft_strlcat.c) [`ft_strlcpy`](src/ft_strlcpy.c) [`ft_strlen`](src/ft_strlen.c)
 * [`ft_strncmp`](src/ft_strncmp.c) [`ft_strnstr`](src/ft_strnstr.c) [`ft_strrchr`](src/ft_strrchr.c) [`ft_tolower`](src/ft_tolower.c) [`ft_toupper`](src/ft_toupper.c) 
 
+<br>
+
 ## Additional Functions
 
 * [`ft_itoa`](src/ft_itoa.c) [`ft_putchar_fd`](src/ft_putchar_fd.c) [`ft_putendl_fd`](src/ft_putendl_fd.c) [`ft_putnbr_fd`](src/ft_putnbr_fd.c) [`ft_putstr_fd`](src/ft_putstr_fd.c) 
 * [`ft_striteri`](src/ft_striteri.c) [`ft_strmapi`](src/ft_strmapi.c) [`ft_strjoin`](src/ft_strjoin.c) [`ft_substr`](src/ft_substr.c) [`ft_strtrim`](src/ft_strtrim.c) [`ft_split`](src/ft_split.c)
+
+<br>
 
 ## Bonus Functions
 
