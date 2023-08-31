@@ -14,19 +14,19 @@
 
 static size_t	ft_digits_counter(int number)
 {
-	int	lenght;
+	int	length;
 
-	lenght = 0;
+	length = 0;
 	if (number <= 0)
 	{
-		lenght++;
+		length++;
 	}
 	while (number)
 	{
-		lenght++;
+		length++;
 		number = number / 10;
 	}
-	return (lenght);
+	return (length);
 }
 
 char	*ft_itoa(int n)
