@@ -6,7 +6,7 @@
 /*   By: arsobrei <arsobrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 10:24:02 by arsobrei          #+#    #+#             */
-/*   Updated: 2023/08/04 14:14:08 by arsobrei         ###   ########.fr       */
+/*   Updated: 2023/08/31 11:56:30 by arsobrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,15 @@ static size_t	ft_count_words(char const *str, char limiter)
 
 static size_t	ft_len_substring(char const *str, int start, char limiter)
 {
-	size_t	lenght;
+	size_t	length;
 
-	lenght = 0;
+	length = 0;
 	while ((str[start]) && (str[start] != limiter))
 	{
 		start++;
-		lenght++;
+		length++;
 	}
-	return (lenght);
+	return (length);
 }
 
 char	**ft_split(char const *s, char c)
