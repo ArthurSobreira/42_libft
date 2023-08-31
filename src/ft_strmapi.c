@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	lenght;
+	size_t	length;
 	size_t	index;
 	char	*result;
 
@@ -22,8 +22,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	{
 		return (NULL);
 	}
-	lenght = ft_strlen(s);
-	result = (char *)malloc((lenght + 1) * sizeof(char));
+	length = ft_strlen(s);
+	result = (char *)malloc((length + 1) * sizeof(char));
 	if (result == NULL)
 	{
 		return (NULL);
